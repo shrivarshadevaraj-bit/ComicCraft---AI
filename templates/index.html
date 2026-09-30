@@ -4,20 +4,24 @@
     <title>ComicCraft</title>
 </head>
 <body>
-    <h1>ComicCraft 🎭</h1>
+    <h1>ComicCraft</h1>
 
     <form action="/create" method="post">
-        <label>Character:</label><br>
-        <input type="text" name="character" required><br><br>
+        <label>Character:</label>
+        <input type="text" name="character" required>
 
-        <label>Story:</label><br>
-        <textarea name="story" required></textarea><br><br>
+        <br><br>
+
+        <label>Story:</label>
+        <textarea name="story" required></textarea>
+
+        <br><br>
 
         <button type="submit">Create Comic</button>
     </form>
 
     {% if result %}
-        <h2>Result:</h2>
+        <h2>Result</h2>
         <p>{{ result }}</p>
     {% endif %}
 </body>
